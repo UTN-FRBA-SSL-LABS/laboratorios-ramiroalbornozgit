@@ -1,0 +1,6 @@
+=== Tests de integracion ===
+[Se calculan bien totales y aplican los descuentos]
+  [OK]   total == 1300
+  [OK]   carrito_descuento(total,10) == 1170
+
+--- 2/2 tests OK ---
