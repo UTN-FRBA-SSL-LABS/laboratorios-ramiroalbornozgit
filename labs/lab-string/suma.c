@@ -12,7 +12,17 @@
  */
 
 int main(int argc, char *argv[]) {
-    (void)argc; (void)argv;
-    /* TODO */
+    (void)argc; /* silenciamos el parámetro que no usamos*/
+
+    int total = 0; /*acumulador */
+
+    /* a partir del primer argumento*/
+    for (char **arg = argv + 1; *arg != NULL; arg++) {
+        /* Convertimos a entero y sumamos al total */
+        total += ToInteger(*arg);
+    }
+
+    /* afuera del bucle imprimo el resultado*/
+    printf("%d\n", total);
     return 0;
 }
